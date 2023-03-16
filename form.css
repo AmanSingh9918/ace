@@ -1,0 +1,20 @@
+body{
+    background-image: url(bgnew5.jpg);
+    background-position:cover ;
+    background-repeat: no-repeat;
+    background-size: 200vh 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    box-sizing: content-box;
+    margin-left: 500px;
+margin-right: 500px;
+}
+.signup-box p1{
+    color: black;
+    font-weight: 200;
+    text-align: center;
+    font-style: calc();
+    font-size: 150%;
+    
+}

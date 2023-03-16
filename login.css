@@ -1,0 +1,36 @@
+body{
+    background-image: url(bgnew3.webp);
+    background-position:cover ;
+    background-repeat: no-repeat;
+    background-size: 200vh 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    box-sizing: content-box;
+    margin-left: 500px;
+margin-right: 500px;
+
+}
+.login-box h1{
+    color: aqua;
+    font-weight: 1000;
+    text-align: center;
+    font-style: calc();
+    font-size: 500%;
+}
+.login-box p{
+
+    color:black;
+    font-size:x-large;
+}
+.login-box abc p{
+    color: aquamarine;
+}
+.username p1{
+    border: 3px brown;
+    text-align: center;
+    color: aquamarine;
+}
+.login-box a{
+    color:black ;
+}
