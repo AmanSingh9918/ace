@@ -1,32 +1,33 @@
+ 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet"type="text/css" href="D:\project billpay\login.css" >
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="login.css" /> 
-    <title>Link CSS to HTML</title>
-</head>
 
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> BILL PAY </title>
+    <link rel="stylesheet" href="login.css">
+  </head>
   <body>
-    <div class="login-box">
+    <div class="center">
       <h1>Login</h1>
-      <div class="username">
-        <p1>
-        <h2>Username</h2>
-        <h4><input type="text" placeholder="" /></h4><br>
-        <h2>Email</h2>
-        <h5><input type="email" placeholder="" /></h5><br>
-        <h2>Password</h2>
-       <h6> <input type="password" placeholder="" /></h6><br>
-       
-        <h3><input type="button" value="Submit" /></h3>
-        <p class="para-2">
-      Not have an account? <a href="signup.html">Sign Up Here</a>
-    </p>
-        </p1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>Username</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        
+        <input type="submit" value="Login">
+        <div class="signup_link">
+          Not a member? <a href="#">Signup</a>
+        </div>
+      </form>
     </div>
-    </div>
+
   </body>
 </html>
