@@ -21,6 +21,25 @@ app.get("/login",(req,res)=>{
 app.get("/signupp",(req,res)=>{
     res.render("signupp")
 })
+app.get("/electricity",(req,res)=>{
+    res.render("electricity")
+})
+app.get("/home",(req,res)=>{
+    res.render("home")
+})
+app.get("/cable",(req,res)=>{
+    res.render("cable")
+})
+app.get("/creditcard",(req,res)=>{
+    res.render("creditcard")
+})
+app.get("/gasbill",(req,res)=>{
+    res.render("gasbill")
+})
+app.get("/waterbill",(req,res)=>{
+    res.render("waterbill")
+})
+
 app.post("/signupp",async (req,res)=>{
  
 const data={
@@ -29,11 +48,25 @@ const data={
     username:req.body.username,
     email:req.body.email,
     password:req.body.password
-
 }
-await collection.insertMany([data])
+    try{
+        const check=await collection.findOne({email:req.body.email})
+        if(check.email===req.body.email){
+            res.send("email occupied")
+        }
+        else{
+            res.render("login")
+        }
 
-res.render("home")
+
+    }
+    
+    catch(err){
+        comsole.log(err)
+        
+       
+    }
+await collection.insertMany([data])
 })
 
 app.post("/login",async (req,res)=>{
