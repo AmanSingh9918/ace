@@ -39,6 +39,15 @@ app.get("/gasbill",(req,res)=>{
 app.get("/waterbill",(req,res)=>{
     res.render("waterbill")
 })
+app.get("/about",(req,res)=>{
+    res.render("about")
+})
+app.get("/mobile",(req,res)=>{
+    res.render("mobile")
+})
+app.get("/homerent",(req,res)=>{
+    res.render("homerent")
+})
 
 app.post("/signupp",async (req,res)=>{
  
