@@ -58,26 +58,9 @@ const data={
     email:req.body.email,
     password:req.body.password
 }
-    try{
-        const check=await collection.findOne({email:req.body.email})
-        if(check.email===req.body.email){
-            res.send("email occupied")
-        }
-        else{
-            res.render("login")
-        }
-
-
-    }
-    
-    catch(err){
-        comsole.log(err)
-        
-       
-    }
 await collection.insertMany([data])
+res.render("login")
 })
-
 app.post("/login",async (req,res)=>{
  
     
